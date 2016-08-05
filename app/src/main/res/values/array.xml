@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="menu">
+    <item>예약내역</item>
+    <item>결제카드º면허정보</item>
+    <item>내쿠폰</item>
+    <item>쿠폰북</item>
+    <item>고객센터</item>
+    <item>쏘카 로그아웃</item>
+</string-array>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        >
+
+        <Spinner
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/sp_menu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:entries="@array/menu"
+            />
+
+        <TextView
+            android:id="@+id/tv_gof"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:text=" S   O   C   A   R"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="85dp"
+            android:textColor="#0571f5"
+            android:textSize="20dp"
+            />
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/searchView" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="40"
+    >
+
+    <ImageButton
+        android:id="@+id/bt_top"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/imgbutton1" />
+</LinearLayout>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="15"
+        android:layout_marginTop="0dp"
+        >
+
+     <Button
+         android:id="@+id/bt_cu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="9900쿠폰"
+         android:layout_marginLeft="10dp"
+         android:background="@drawable/button2"/>
+     <Button
+         android:id="@+id/bt_cu2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="선착순"
+         android:layout_toRightOf="@id/bt_cu"
+         android:layout_marginLeft="10dp"
+         android:background="@drawable/button2"
+         />
+
+ </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginTop="0dp"
+        >
+        <Button
+            android:id="@+id/bt_driving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffee00"
+            android:text="소카 드라이빙 메뉴얼"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+      <ImageButton
+          android:id="@+id/ib_aaa"
+          android:layout_marginTop="10dp"
+          android:layout_width="94dp"
+          android:layout_height="76dp"
+          android:src="@drawable/socar1" />
+        <ImageButton
+            android:id="@+id/ib_bbb"
+            android:layout_marginTop="10dp"
+            android:layout_width="94dp"
+            android:layout_height="76dp"
+            android:src="@drawable/socar2" />
+        <ImageButton
+            android:id="@+id/ib_ccc"
+            android:layout_marginTop="10dp"
+            android:layout_width="94dp"
+            android:layout_height="76dp"
+            android:src="@drawable/socar3" />
+        <ImageButton
+            android:id="@+id/ib_ddd"
+            android:layout_marginTop="10dp"
+            android:layout_width="94dp"
+            android:layout_height="76dp"
+            android:src="@drawable/socar4" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_weight="12"
+        android:layout_marginTop="2dp"
+
+        >
+
+        <Button
+            android:id="@+id/bt_home"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button3"/>
+        <Button
+            android:id="@+id/bt_booking"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="예약"
+            android:layout_toRightOf="@id/bt_home"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button3"
+            />
+
+        <Button
+            android:id="@+id/bt_smartKey"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="스마트키"
+            android:layout_toRightOf="@id/bt_booking"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button3"
+            />
+
+        <Button
+            android:id="@+id/bt_myPage"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="MyPage"
+            android:layout_toRightOf="@id/bt_smartKey"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button3"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
